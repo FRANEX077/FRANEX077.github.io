@@ -1,0 +1,92 @@
+.slider {
+    width: 50%;
+    margin: auto;
+    overflow: hidden;
+    top:23%;
+    left:50%;
+}
+ 
+.slider ul {
+    display: flex;
+    padding: 0;
+    width: 400%;
+}
+ 
+.slider li{
+    width: 100%;
+    list-style: none;
+}
+ 
+.slider img{
+    width: 100%;
+    animation: slider 15s infinite;
+}
+ 
+@keyframes slider {
+    0%{margin-left: 0%;}
+    20%{margin-left: 0%;}
+ 
+    25%{margin-left: -100%;}
+    45%{margin-left: -100%;}
+ 
+    50%{margin-left: -200%;}
+    70%{margin-left: -200%;}
+ 
+    75%{margin-left: -300%;}
+    100%{margin-left: -300%;}
+}
+ 
+#notch {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+}
+ 
+.header{
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 85px;
+    padding: 5px 10%;
+}
+.header .nav-links li{
+    display: inline-block;
+    padding: 0 20px;
+}
+ 
+.header .btn button{
+    font-weight: 700;
+    padding: 9px 25px;
+    background: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+ 
+.header .logo{
+    cursor: pointer;
+}
+ 
+.header .logo img{
+    height: 70px;
+    width: auto;
+    transition: all 0.3s;
+}
+ 
+.header .logo img:hover{
+    transform: scale(1.2);
+}
+ 
+.header .nav-links li:hover{
+    transform: scale(1.1);
+}
+ 
+.header .nav-links a{
+    font-size: 700;
+    color: white;
+    text-decoration: none;
+}
